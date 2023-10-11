@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(2, 2, 67);
+    /* height: 100vh; */
+}
+
+.menu, .main-content{
+    /* height: 100vh; */
+}
+
+.main-content{
+    background-color: #f4f4f4;
+
+}
+
+li {
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff;
+  }
+
+
+  li.active::after {
+    content: '';
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    background-color: #fff; 
+    border: 20px solid #fff;
+    border-radius: 0 50% 50% 0;   
+    top:0px; 
+    right:-23px; 
+  }
+ /* Adjust the width to control the curve */
+
+
+li.active, li:hover{
+    background-color: #fff !important;
+    border-radius: 8px; 
+    color: rgb(2, 2, 67) !important; 
+}
+
+li > a{
+    text-decoration: none;
+}
+
+.rounded-extended{
+    border-radius: 10px;
+    color:blue !important;
+}
